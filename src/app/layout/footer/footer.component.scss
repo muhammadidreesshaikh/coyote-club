@@ -1,0 +1,86 @@
+@import "../../../styles.scss";
+
+.footer {
+  background-color: $white;
+  padding: 1.875rem 0;
+  text-align: center;
+  @include respond(mobile){
+    padding: 10% 0;
+  }
+  .information {
+    h6 {
+      font-family: "Satisfy", cursive;
+      font-size: 45px;
+      color: $gray;
+    }
+    .locate {
+      padding: 30px 0;
+      @include respond(mobile){
+        padding: 20px 0;
+      }
+      h4{
+        font-size: 16px;
+        font-weight: 600;
+        color: $black;
+        @include respond(mobile){
+          padding-top: 25px;
+        }
+      }
+      .addres{
+        padding-top: 10px;
+        @include respond(mobile){
+          padding-top: 5px;
+        }
+        p {
+          font-size: 18px;
+          color: $gray;
+          @include respond(tablet){
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    p {
+      font-size: 23px;
+      color: $gray;
+      @include respond(tablet){
+        font-size: 16px;
+      }
+      @include respond(mobile){
+        font-size: 18px;
+      }
+      @include respond(mobileM){
+        font-size: 16px;
+      }
+    }
+    .social {
+      padding: 30px 0;
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li {
+          a {
+            padding: 0 12px;
+            font-size: 15px;
+            color: $gray;
+            cursor: pointer;
+            &:hover{
+              color: #d3d3d3;
+              transition: 0.5s;
+              opacity: 0.5s;
+            }
+          }
+        }
+      }
+    }
+    .mail {
+      a {
+        color: $gray;
+        font-size: 20px;
+        border-bottom-style: ridge;
+        cursor: pointer;
+      }
+    }
+  }
+}

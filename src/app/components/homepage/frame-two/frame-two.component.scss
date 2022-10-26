@@ -1,0 +1,35 @@
+@import '../../../../styles.scss';
+
+.frame-two{
+  padding: 12.5rem 0;
+  width: 100%;
+  height: 85vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: fixed;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: #3c3c3c;
+  @include respond(tablet) {
+    height: 55vh;
+  }
+  @include respond(mobile) {
+    padding-top: 4.375rem;
+    height: 35vh;
+  }
+  @include respond(mobileM) {
+    height: 30vh;
+  }
+  h1{
+    font-size: 2.813rem;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    color: $white;
+    @include respond(mobile) {
+      font-size: 2rem;
+    }
+    @include respond(mobileM) {
+      font-size: 1.75rem;
+    }
+  }
+}

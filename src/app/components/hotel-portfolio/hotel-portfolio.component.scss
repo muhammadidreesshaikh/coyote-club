@@ -1,0 +1,75 @@
+@import "../../../styles.scss";
+
+.hotel {
+  padding: 2.5rem 0;
+  @include respond(mobile) {
+    padding: 0 0 2.5rem 0;
+  }
+  .hotel-inner {
+    margin-top: 4rem;
+    @include respond(mobile) {
+      margin-top: 2rem;
+    }
+    .title {
+      padding-top: 14.375rem;
+      position: relative;
+      @include respond(tablet) {
+        padding-top: 12.5rem;
+      }
+      @include respond(mobile) {
+        padding-top: 2.188rem;
+      }
+      h6 {
+        padding-left: 5.313rem;
+        letter-spacing: 2.1px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $black;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 77%;
+          left: 0;
+          width: 70px;
+          height: 3px;
+          background-color: #ffab00;
+          @include respond(tablet) {
+            top: 75%;
+          }
+          @include respond(mobile) {
+            top: 38%;
+          }
+        }
+      }
+      h1 {
+        padding-top: 0.938rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $black;
+        @include respond(tablet) {
+          font-size: 1.875rem;
+          padding-top: 1.438rem;
+        }
+        @include respond(mobile) {
+          font-size: 2.188rem;
+        }
+        @include respond(mobileM) {
+          font-size: 1.875rem;
+        }
+      }
+    }
+    .image {
+      img {
+        width: 80%;
+        height: 85vh;
+        @include respond(tablet) {
+          width: 100%;
+          height: 70vh;
+        }
+        @include respond(mobile) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
